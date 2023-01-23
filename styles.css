@@ -1,0 +1,25 @@
+.contenedor {
+    display: flex;
+  }
+  
+  .barra-lateral {
+    width: 200px;
+  }
+  
+  .seccion-principal {
+    flex-grow: 1;
+  }
+  
+  @media (max-width: 640px) {
+    .barra-lateral {
+      flex-direction: row;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+  
+    .seccion-principal {
+      margin-bottom: 50px;
+    }
+  }
+  
